@@ -1,101 +1,290 @@
-プライバシーポリシー - After24
-最終更新日: 2026年10月6日
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="After24 のプライバシーポリシー / Privacy Policy for After24">
+  <title>プライバシーポリシー / Privacy Policy — After24</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+      color: #272923;
+      background: #f7f5ef;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
 
-Shun Kozuma（以下「開発者」）は、After24（以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; }
+    a { color: #375d50; text-underline-offset: 0.18em; }
+    a:hover { color: #213d34; }
+    a:focus-visible { outline: 2px solid #375d50; outline-offset: 3px; border-radius: 2px; }
 
-1. 写真と入力内容の取り扱い
-通常の撮影・現像・個人フィルムの保存は端末内で行います。写真は端末内で暗号化して保存し、個人フィルムの名前やメモも端末内に保存します。これらは、ユーザーがエアメールへ送る写真として選ばない限り、開発者のサーバーへ送信しません。
+    .page {
+      width: min(100% - 40px, 800px);
+      margin-inline: auto;
+      padding: 48px 0 88px;
+    }
 
-エアメールに投稿すると、ユーザーが選んだ現像済み写真1枚と、任意で入力した表示名・国・都市・ひとことを送信します。写真は縮小し、EXIFやIPTCに含まれる位置情報などのメタデータを除いて保存します。運営が公開前に投稿を確認し、承認された写真だけを便が締まった後に公開します。
+    .masthead {
+      padding: 0 0 32px;
+      border-bottom: 1px solid #d9d8cf;
+    }
+    .brand {
+      margin: 0 0 24px;
+      color: #5e675d;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p, ul { margin-top: 0; }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 650;
+      letter-spacing: -0.035em;
+      line-height: 1.3;
+    }
+    .subtitle { margin: 0; color: #676c63; font-size: 1rem; }
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .language-nav a {
+      display: inline-block;
+      padding: 9px 16px;
+      border: 1px solid #cdd2c7;
+      border-radius: 999px;
+      color: #315247;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .language-nav a:hover { background: #e8ece6; }
 
-2. 収集する情報
-・エアメールの投稿写真、任意の裏面情報、投稿・通報・ブロックの記録
-・AppleまたはGoogleでのサインインに伴うアカウント識別子と、提供された場合のメールアドレス
-・通知を利用する場合の端末通知トークンと通知設定
-・広告識別子（IDFA）：許可を得た場合のパーソナライズ広告のため
-・利用状況データ：Firebase Analyticsによる、機能の利用状況などの分析のため。個人フィルムの写真やメモの内容は分析イベントに含めません
-・購入履歴：「After24+」の購入状態を判定するため
+    article { padding-top: 46px; scroll-margin-top: 24px; }
+    article + article {
+      margin-top: 64px;
+      border-top: 1px solid #d9d8cf;
+    }
+    .article-title {
+      margin-bottom: 6px;
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      letter-spacing: -0.02em;
+      line-height: 1.35;
+    }
+    .updated { margin-bottom: 26px; color: #656a61; font-size: 0.9rem; }
+    .intro { margin-bottom: 32px; }
+    section {
+      padding: 26px 0;
+      border-top: 1px solid #e0dfd6;
+    }
+    section h3 {
+      margin-bottom: 14px;
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.9;
+      overflow-wrap: anywhere;
+    }
+    p { margin-bottom: 1em; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { margin-bottom: 1em; padding-left: 1.45em; }
+    li + li { margin-top: 8px; }
+    .footer {
+      margin-top: 64px;
+      padding-top: 20px;
+      border-top: 1px solid #d9d8cf;
+      color: #676c63;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 560px) {
+      .page { width: min(100% - 32px, 800px); padding-top: 28px; padding-bottom: 56px; }
+      .masthead { padding-bottom: 26px; }
+      article { padding-top: 36px; }
+      article + article { margin-top: 44px; }
+      section { padding: 22px 0; }
+      p, li { line-height: 1.85; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media print {
+      :root { background: #fff; color: #000; }
+      .page { width: 100%; padding: 0; }
+      .language-nav { display: none; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="brand">After24</p>
+      <h1>プライバシーポリシー</h1>
+      <p class="subtitle">Privacy Policy</p>
+      <nav class="language-nav" aria-label="Language / 言語">
+        <a href="#ja" lang="ja">日本語</a>
+        <a href="#en" lang="en">English</a>
+      </nav>
+    </header>
 
-3. 利用目的
-撮影・現像・保存、エアメールの投稿・審査・公開・通報とブロックへの対応、承認・差し戻し・配達のお知らせ、広告配信、アプリの品質改善、購入状態の確認に利用します。
+    <article id="ja" lang="ja" aria-labelledby="ja-title">
+      <h2 class="article-title" id="ja-title">プライバシーポリシー — After24</h2>
+      <p class="updated">最終更新日: 2026年10月6日</p>
+      <p class="intro">Shun Kozuma（以下「開発者」）は、After24（以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。</p>
 
-4. 外部サービス
-・Google AdMob：広告配信 — https://policies.google.com/privacy
-・Firebase Analytics、Firebase Authentication、Firebase Cloud Messaging：利用状況分析、サインイン、通知 — https://policies.google.com/privacy
-・Cloudflare Workers、D1、R2：エアメールのAPI、投稿記録、投稿画像の保管 — https://www.cloudflare.com/privacypolicy/
-・Appleのサインインとプッシュ通知：認証と通知の配信 — https://www.apple.com/legal/privacy/
-・RevenueCat：購入状態の確認 — https://www.revenuecat.com/privacy
+      <section aria-labelledby="ja-1">
+        <h3 id="ja-1">1. 写真と入力内容の取り扱い</h3>
+        <p>通常の撮影・現像・個人フィルムの保存は端末内で行います。写真は端末内で暗号化して保存し、個人フィルムの名前やメモも端末内に保存します。これらは、ユーザーがエアメールへ送る写真として選ばない限り、開発者のサーバーへ送信しません。</p>
+        <p>エアメールに投稿すると、ユーザーが選んだ現像済み写真1枚と、任意で入力した表示名・国・都市・ひとことを送信します。写真は縮小し、EXIFやIPTCに含まれる位置情報などのメタデータを除いて保存します。運営が公開前に投稿を確認し、承認された写真だけを便が締まった後に公開します。</p>
+      </section>
 
-5. 広告トラッキング
-本アプリはApp Tracking Transparency（ATT）を使用し、広告トラッキングの前に許可を求めます。許可しない場合もアプリの機能を利用できます。許可はiOSの「設定」から変更できます。
+      <section aria-labelledby="ja-2">
+        <h3 id="ja-2">2. 収集する情報</h3>
+        <ul>
+          <li>エアメールの投稿写真、任意の裏面情報、投稿・通報・ブロックの記録</li>
+          <li>AppleまたはGoogleでのサインインに伴うアカウント識別子と、提供された場合のメールアドレス</li>
+          <li>通知を利用する場合の端末通知トークンと通知設定</li>
+          <li>広告識別子（IDFA）：許可を得た場合のパーソナライズ広告のため</li>
+          <li>利用状況データ：Firebase Analyticsによる、機能の利用状況などの分析のため。個人フィルムの写真やメモの内容は分析イベントに含めません</li>
+          <li>購入履歴：「After24+」の購入状態を判定するため</li>
+        </ul>
+      </section>
 
-6. カメラと写真ライブラリ
-カメラは写真の撮影に使用します。写真ライブラリには、現像した写真をユーザーが保存するときだけ書き込みます。写真ライブラリにある写真は読み取りません。エアメールに送れるのは、本アプリで現像済みの写真からユーザーが選んだ1枚だけです。
+      <section aria-labelledby="ja-3">
+        <h3 id="ja-3">3. 利用目的</h3>
+        <p>撮影・現像・保存、エアメールの投稿・審査・公開・通報とブロックへの対応、承認・差し戻し・配達のお知らせ、広告配信、アプリの品質改善、購入状態の確認に利用します。</p>
+      </section>
 
-7. 保管と削除
-個人フィルムの写真と記録は端末内に保存します。アプリを削除すると、アプリ内のローカルデータは端末から削除されます。写真ライブラリへ保存した写真は写真ライブラリの管理下に残ります。
+      <section aria-labelledby="ja-4">
+        <h3 id="ja-4">4. 外部サービス</h3>
+        <ul>
+          <li>Google AdMob：広告配信 — <a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a></li>
+          <li>Firebase Analytics、Firebase Authentication、Firebase Cloud Messaging：利用状況分析、サインイン、通知 — <a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a></li>
+          <li>Cloudflare Workers、D1、R2：エアメールのAPI、投稿記録、投稿画像の保管 — <a href="https://www.cloudflare.com/privacypolicy/">Cloudflareプライバシーポリシー</a></li>
+          <li>Appleのサインインとプッシュ通知：認証と通知の配信 — <a href="https://www.apple.com/legal/privacy/">Appleのプライバシー</a></li>
+          <li>RevenueCat：購入状態の確認 — <a href="https://www.revenuecat.com/privacy">RevenueCatプライバシーポリシー</a></li>
+        </ul>
+      </section>
 
-エアメールで公開された便は30日間、ほかの利用者がアプリ内で閲覧できます。展示終了後も投稿画像と裏面情報は保管し、将来、過去の写真を地図に並べるなどの機能に利用する場合があります。保管中の写真は一般には公開しません。
+      <section aria-labelledby="ja-5">
+        <h3 id="ja-5">5. 広告トラッキング</h3>
+        <p>本アプリはApp Tracking Transparency（ATT）を使用し、広告トラッキングの前に許可を求めます。許可しない場合もアプリの機能を利用できます。許可はiOSの「設定」から変更できます。</p>
+      </section>
 
-投稿を取り下げたり削除したりすると、画像を削除して公開を停止します。運営上必要な投稿・通報の記録は残る場合があります。アプリの削除だけでは、サーバー上のエアメール投稿は削除されません。アカウント削除はアプリ内から行えます。削除すると投稿画像と裏面情報、保存済みの端末トークンを削除し、投稿者の識別子を匿名化します。
+      <section aria-labelledby="ja-6">
+        <h3 id="ja-6">6. カメラと写真ライブラリ</h3>
+        <p>カメラは写真の撮影に使用します。写真ライブラリには、現像した写真をユーザーが保存するときだけ書き込みます。写真ライブラリにある写真は読み取りません。エアメールに送れるのは、本アプリで現像済みの写真からユーザーが選んだ1枚だけです。</p>
+      </section>
 
-8. 子どものプライバシー
-本アプリは13歳未満の子どもから意図的に個人情報を収集しません。
+      <section aria-labelledby="ja-7">
+        <h3 id="ja-7">7. 保管と削除</h3>
+        <p>個人フィルムの写真と記録は端末内に保存します。アプリを削除すると、アプリ内のローカルデータは端末から削除されます。写真ライブラリへ保存した写真は写真ライブラリの管理下に残ります。</p>
+        <p>エアメールで公開された便は30日間、ほかの利用者がアプリ内で閲覧できます。展示終了後も投稿画像と裏面情報は保管し、将来、過去の写真を地図に並べるなどの機能に利用する場合があります。保管中の写真は一般には公開しません。</p>
+        <p>投稿を取り下げたり削除したりすると、画像を削除して公開を停止します。運営上必要な投稿・通報の記録は残る場合があります。アプリの削除だけでは、サーバー上のエアメール投稿は削除されません。アカウント削除はアプリ内から行えます。削除すると投稿画像と裏面情報、保存済みの端末トークンを削除し、投稿者の識別子を匿名化します。</p>
+      </section>
 
-9. お問い合わせ
-プライバシー、投稿の削除、権利侵害に関するお問い合わせ：after24.app@gmail.com
+      <section aria-labelledby="ja-8">
+        <h3 id="ja-8">8. 子どものプライバシー</h3>
+        <p>本アプリは13歳未満の子どもから意図的に個人情報を収集しません。</p>
+      </section>
 
-10. 変更
-このポリシーを変更した場合は、このページに掲載します。
+      <section aria-labelledby="ja-9">
+        <h3 id="ja-9">9. お問い合わせ</h3>
+        <p>プライバシー、投稿の削除、権利侵害に関するお問い合わせ：<a href="mailto:after24.app@gmail.com">after24.app@gmail.com</a></p>
+      </section>
 
-----
+      <section aria-labelledby="ja-10">
+        <h3 id="ja-10">10. 変更</h3>
+        <p>このポリシーを変更した場合は、このページに掲載します。</p>
+      </section>
+    </article>
 
-Privacy Policy - After24
-Last updated: October 6, 2026
+    <article id="en" lang="en" aria-labelledby="en-title">
+      <h2 class="article-title" id="en-title">Privacy Policy — After24</h2>
+      <p class="updated">Last updated: October 6, 2026</p>
+      <p class="intro">Shun Kozuma ("the developer") describes how information is handled in After24 ("the app") below.</p>
 
-Shun Kozuma ("the developer") describes how information is handled in After24 ("the app") below.
+      <section aria-labelledby="en-1">
+        <h3 id="en-1">1. Photos and text</h3>
+        <p>Ordinary shooting, development, and storage of personal film take place on your device. Photos are stored encrypted on your device, and names and notes for personal film are stored there too. They are not sent to the developer's servers unless you choose a developed photo to send through Air Mail.</p>
+        <p>When you submit to Air Mail, the app sends the one developed photo you choose and any display name, country, city, or note you choose to add. The image is resized, and EXIF and IPTC metadata, including location information, are removed before storage. The developer reviews submissions before publication. Only approved photos appear after a mail closes.</p>
+      </section>
 
-1. Photos and text
-Ordinary shooting, development, and storage of personal film take place on your device. Photos are stored encrypted on your device, and names and notes for personal film are stored there too. They are not sent to the developer's servers unless you choose a developed photo to send through Air Mail.
+      <section aria-labelledby="en-2">
+        <h3 id="en-2">2. Information collected</h3>
+        <ul>
+          <li>Photos submitted to Air Mail, optional information on the back of a print, and records of submissions, reports, and blocks</li>
+          <li>An account identifier and, if provided, an email address when you sign in with Apple or Google</li>
+          <li>A device notification token and notification preferences if you use notifications</li>
+          <li>Advertising identifier (IDFA), with permission, for personalized ads</li>
+          <li>Usage data through Firebase Analytics to understand how features are used; the contents of personal-film photos and notes are not included in analytics events</li>
+          <li>Purchase history to determine After24+ entitlement</li>
+        </ul>
+      </section>
 
-When you submit to Air Mail, the app sends the one developed photo you choose and any display name, country, city, or note you choose to add. The image is resized, and EXIF and IPTC metadata, including location information, are removed before storage. The developer reviews submissions before publication. Only approved photos appear after a mail closes.
+      <section aria-labelledby="en-3">
+        <h3 id="en-3">3. How information is used</h3>
+        <p>We use this information to provide shooting, development, and storage; operate, moderate, and display Air Mail; handle reports and blocks; send acceptance, rejection, and delivery notifications; show ads; improve the app; and verify purchases.</p>
+      </section>
 
-2. Information collected
-• Photos submitted to Air Mail, optional information on the back of a print, and records of submissions, reports, and blocks
-• An account identifier and, if provided, an email address when you sign in with Apple or Google
-• A device notification token and notification preferences if you use notifications
-• Advertising identifier (IDFA), with permission, for personalized ads
-• Usage data through Firebase Analytics to understand how features are used; the contents of personal-film photos and notes are not included in analytics events
-• Purchase history to determine After24+ entitlement
+      <section aria-labelledby="en-4">
+        <h3 id="en-4">4. Third-party services</h3>
+        <ul>
+          <li>Google AdMob: advertising — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+          <li>Firebase Analytics, Firebase Authentication, and Firebase Cloud Messaging: analytics, sign-in, and notifications — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+          <li>Cloudflare Workers, D1, and R2: the Air Mail API, submission records, and submitted-image storage — <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+          <li>Sign in with Apple and Apple Push Notification service: authentication and notification delivery — <a href="https://www.apple.com/legal/privacy/">Apple Privacy</a></li>
+          <li>RevenueCat: purchase status — <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+        </ul>
+      </section>
 
-3. How information is used
-We use this information to provide shooting, development, and storage; operate, moderate, and display Air Mail; handle reports and blocks; send acceptance, rejection, and delivery notifications; show ads; improve the app; and verify purchases.
+      <section aria-labelledby="en-5">
+        <h3 id="en-5">5. Ad tracking</h3>
+        <p>The app uses App Tracking Transparency (ATT) and asks for permission before ad tracking. You can use the app's features if you decline. You can change this permission in iOS Settings.</p>
+      </section>
 
-4. Third-party services
-• Google AdMob: advertising — https://policies.google.com/privacy
-• Firebase Analytics, Firebase Authentication, and Firebase Cloud Messaging: analytics, sign-in, and notifications — https://policies.google.com/privacy
-• Cloudflare Workers, D1, and R2: the Air Mail API, submission records, and submitted-image storage — https://www.cloudflare.com/privacypolicy/
-• Sign in with Apple and Apple Push Notification service: authentication and notification delivery — https://www.apple.com/legal/privacy/
-• RevenueCat: purchase status — https://www.revenuecat.com/privacy
+      <section aria-labelledby="en-6">
+        <h3 id="en-6">6. Camera and photo library</h3>
+        <p>The camera is used to take photos. The app writes to your photo library only when you choose to save a developed photo. It does not read photos from your photo library. You can send only one photo you choose from photos developed in this app to Air Mail.</p>
+      </section>
 
-5. Ad tracking
-The app uses App Tracking Transparency (ATT) and asks for permission before ad tracking. You can use the app's features if you decline. You can change this permission in iOS Settings.
+      <section aria-labelledby="en-7">
+        <h3 id="en-7">7. Storage and deletion</h3>
+        <p>Personal-film photos and records are stored on your device. Deleting the app removes its local app data from the device. Photos saved to your photo library remain under your photo library's control.</p>
+        <p>Published Air Mail can be viewed by other users in the app for 30 days. Submitted images and information on the backs of prints are retained after the exhibition ends and may be used in future features, such as placing past photos on a map. Retained photos are not publicly displayed.</p>
+        <p>If you withdraw or delete a submission, its image is deleted and public display stops. Records needed to operate and moderate the service may remain. Deleting the app alone does not delete Air Mail submissions stored on the server. You can delete your account in the app. Account deletion removes submitted images, information on the backs of prints, and stored device tokens, and anonymizes the submitter identifier.</p>
+      </section>
 
-6. Camera and photo library
-The camera is used to take photos. The app writes to your photo library only when you choose to save a developed photo. It does not read photos from your photo library. You can send only one photo you choose from photos developed in this app to Air Mail.
+      <section aria-labelledby="en-8">
+        <h3 id="en-8">8. Children's privacy</h3>
+        <p>The app does not knowingly collect personal information from children under 13.</p>
+      </section>
 
-7. Storage and deletion
-Personal-film photos and records are stored on your device. Deleting the app removes its local app data from the device. Photos saved to your photo library remain under your photo library's control.
+      <section aria-labelledby="en-9">
+        <h3 id="en-9">9. Contact</h3>
+        <p>For privacy questions, submission deletion, or rights concerns: <a href="mailto:after24.app@gmail.com">after24.app@gmail.com</a></p>
+      </section>
 
-Published Air Mail can be viewed by other users in the app for 30 days. Submitted images and information on the backs of prints are retained after the exhibition ends and may be used in future features, such as placing past photos on a map. Retained photos are not publicly displayed.
+      <section aria-labelledby="en-10">
+        <h3 id="en-10">10. Changes</h3>
+        <p>Changes to this policy will be posted on this page.</p>
+      </section>
+    </article>
 
-If you withdraw or delete a submission, its image is deleted and public display stops. Records needed to operate and moderate the service may remain. Deleting the app alone does not delete Air Mail submissions stored on the server. You can delete your account in the app. Account deletion removes submitted images, information on the backs of prints, and stored device tokens, and anonymizes the submitter identifier.
-
-8. Children's privacy
-The app does not knowingly collect personal information from children under 13.
-
-9. Contact
-For privacy questions, submission deletion, or rights concerns: after24.app@gmail.com
-
-10. Changes
-Changes to this policy will be posted on this page.
+    <footer class="footer">© 2026 After24</footer>
+  </main>
+</body>
+</html>
