@@ -1,70 +1,101 @@
 プライバシーポリシー - After24
-最終更新日: 2026年9月25日
-Shun Kozuma（以下「開発者」）は、After24（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
-1. 写真の取り扱い
-本アプリは、端末のカメラで撮影した写真を、端末内に暗号化して保存します。現像の処理を含め、写真の処理はすべて端末内で完結し、写真そのものが開発者や第三者のサーバーへ送信されることは一切ありません。
-フィルムの名前やメモなど、ユーザーが入力した文字も端末内のデータベースにのみ保存され、送信されることはありません。
+最終更新日: 2026年10月6日
+
+Shun Kozuma（以下「開発者」）は、After24（以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。
+
+1. 写真と入力内容の取り扱い
+通常の撮影・現像・個人フィルムの保存は端末内で行います。写真は端末内で暗号化して保存し、個人フィルムの名前やメモも端末内に保存します。これらは、ユーザーがエアメールへ送る写真として選ばない限り、開発者のサーバーへ送信しません。
+
+エアメールに投稿すると、ユーザーが選んだ現像済み写真1枚と、任意で入力した表示名・国・都市・ひとことを送信します。写真は縮小し、EXIFやIPTCに含まれる位置情報などのメタデータを除いて保存します。運営が公開前に投稿を確認し、承認された写真だけを便が締まった後に公開します。
+
 2. 収集する情報
-本アプリは以下の情報を収集します：
-	•	広告識別子（IDFA）: パーソナライズ広告の配信のため（ユーザーの許可がある場合のみ）
-	•	利用状況データ: アプリの改善のため（Firebase Analytics による匿名データ）。撮影した枚数やフィルムを預けた回数など、操作の種類と回数のみを記録し、写真・入力した文字の内容は含みません
-	•	購入履歴: 「After24+」の購入状態を判定するため（RevenueCat）
-3. 情報の利用目的
-	•	アプリの機能提供（撮影・現像・写真の保存）
-	•	広告の配信（Google AdMob）
-	•	アプリの品質改善（Firebase Analytics）
-	•	課金処理（RevenueCat）
-4. 第三者への情報提供
-開発者は以下のサードパーティサービスを利用しています：
-	•	Google AdMob: 広告配信 — Googleプライバシーポリシー https://policies.google.com/privacy
-	•	Firebase Analytics: 利用状況分析 — Googleプライバシーポリシー https://policies.google.com/privacy
-	•	RevenueCat: 課金処理 — RevenueCatプライバシーポリシー https://www.revenuecat.com/privacy
-5. トラッキングについて
-本アプリはApp Tracking Transparency（ATT）フレームワークを使用し、広告トラッキングの前にユーザーの許可を求めます。許可しない場合でも本アプリのすべての機能をご利用いただけます。許可の設定は、iOSの「設定」アプリからいつでも変更できます。
-6. カメラ・写真ライブラリへのアクセス
-カメラは写真を撮影するためだけに使用します。写真ライブラリへは、現像した写真をユーザーが保存するときだけ書き込みます。写真ライブラリの写真を読み取ることはありません。
-7. データの保管・削除
-写真およびフィルムの記録は、端末上でのみ処理・保存され、開発者のサーバーには送信されません。アプリを削除することでローカルデータはすべて削除されます。
-写真ライブラリへ保存した写真は、ユーザーの写真ライブラリの管理下となります。
+・エアメールの投稿写真、任意の裏面情報、投稿・通報・ブロックの記録
+・AppleまたはGoogleでのサインインに伴うアカウント識別子と、提供された場合のメールアドレス
+・通知を利用する場合の端末通知トークンと通知設定
+・広告識別子（IDFA）：許可を得た場合のパーソナライズ広告のため
+・利用状況データ：Firebase Analyticsによる、機能の利用状況などの分析のため。個人フィルムの写真やメモの内容は分析イベントに含めません
+・購入履歴：「After24+」の購入状態を判定するため
+
+3. 利用目的
+撮影・現像・保存、エアメールの投稿・審査・公開・通報とブロックへの対応、承認・差し戻し・配達のお知らせ、広告配信、アプリの品質改善、購入状態の確認に利用します。
+
+4. 外部サービス
+・Google AdMob：広告配信 — https://policies.google.com/privacy
+・Firebase Analytics、Firebase Authentication、Firebase Cloud Messaging：利用状況分析、サインイン、通知 — https://policies.google.com/privacy
+・Cloudflare Workers、D1、R2：エアメールのAPI、投稿記録、投稿画像の保管 — https://www.cloudflare.com/privacypolicy/
+・Appleのサインインとプッシュ通知：認証と通知の配信 — https://www.apple.com/legal/privacy/
+・RevenueCat：購入状態の確認 — https://www.revenuecat.com/privacy
+
+5. 広告トラッキング
+本アプリはApp Tracking Transparency（ATT）を使用し、広告トラッキングの前に許可を求めます。許可しない場合もアプリの機能を利用できます。許可はiOSの「設定」から変更できます。
+
+6. カメラと写真ライブラリ
+カメラは写真の撮影に使用します。写真ライブラリには、現像した写真をユーザーが保存するときだけ書き込みます。写真ライブラリにある写真は読み取りません。エアメールに送れるのは、本アプリで現像済みの写真からユーザーが選んだ1枚だけです。
+
+7. 保管と削除
+個人フィルムの写真と記録は端末内に保存します。アプリを削除すると、アプリ内のローカルデータは端末から削除されます。写真ライブラリへ保存した写真は写真ライブラリの管理下に残ります。
+
+エアメールで公開された便は30日間、ほかの利用者がアプリ内で閲覧できます。展示終了後も投稿画像と裏面情報は保管し、将来、過去の写真を地図に並べるなどの機能に利用する場合があります。保管中の写真は一般には公開しません。
+
+投稿を取り下げたり削除したりすると、画像を削除して公開を停止します。運営上必要な投稿・通報の記録は残る場合があります。アプリの削除だけでは、サーバー上のエアメール投稿は削除されません。アカウント削除はアプリ内から行えます。削除すると投稿画像と裏面情報、保存済みの端末トークンを削除し、投稿者の識別子を匿名化します。
+
 8. 子どものプライバシー
-本アプリは13歳未満の子どもから意図的に個人情報を収集することはありません。
+本アプリは13歳未満の子どもから意図的に個人情報を収集しません。
+
 9. お問い合わせ
-プライバシーポリシーに関するお問い合わせは以下までご連絡ください：
-Email: zooo14.dev@gmail.com
-10. プライバシーポリシーの変更
-本ポリシーは予告なく変更される場合があります。変更後のポリシーはこのページに掲載します。
+プライバシー、投稿の削除、権利侵害に関するお問い合わせ：after24.app@gmail.com
+
+10. 変更
+このポリシーを変更した場合は、このページに掲載します。
 
 ----
 
 Privacy Policy - After24
-Last updated: September 25, 2026
-Shun Kozuma ("the developer") sets out the following privacy policy for the handling of personal information in After24 ("the app").
-1. Photos
-The app stores the photos you take with your device's camera, encrypted, on your device. All processing, including development, happens on your device. Your photos are never sent to the developer or to any third-party server.
-Text you enter, such as film names and notes, is stored only in the database on your device and is never sent.
-2. Information we collect
-	•	Advertising identifier (IDFA): to show personalized ads (only with your permission)
-	•	Usage data: to improve the app (anonymous data via Firebase Analytics). Only the kind and number of actions are recorded, such as how many photos were taken or how many rolls were dropped off. Photos and the text you enter are never included.
-	•	Purchase history: to check whether "After24+" has been purchased (RevenueCat)
-3. How we use information
-	•	Providing app features (shooting, developing, saving photos)
-	•	Showing ads (Google AdMob)
-	•	Improving the app (Firebase Analytics)
-	•	Processing purchases (RevenueCat)
+Last updated: October 6, 2026
+
+Shun Kozuma ("the developer") describes how information is handled in After24 ("the app") below.
+
+1. Photos and text
+Ordinary shooting, development, and storage of personal film take place on your device. Photos are stored encrypted on your device, and names and notes for personal film are stored there too. They are not sent to the developer's servers unless you choose a developed photo to send through Air Mail.
+
+When you submit to Air Mail, the app sends the one developed photo you choose and any display name, country, city, or note you choose to add. The image is resized, and EXIF and IPTC metadata, including location information, are removed before storage. The developer reviews submissions before publication. Only approved photos appear after a mail closes.
+
+2. Information collected
+• Photos submitted to Air Mail, optional information on the back of a print, and records of submissions, reports, and blocks
+• An account identifier and, if provided, an email address when you sign in with Apple or Google
+• A device notification token and notification preferences if you use notifications
+• Advertising identifier (IDFA), with permission, for personalized ads
+• Usage data through Firebase Analytics to understand how features are used; the contents of personal-film photos and notes are not included in analytics events
+• Purchase history to determine After24+ entitlement
+
+3. How information is used
+We use this information to provide shooting, development, and storage; operate, moderate, and display Air Mail; handle reports and blocks; send acceptance, rejection, and delivery notifications; show ads; improve the app; and verify purchases.
+
 4. Third-party services
-	•	Google AdMob: advertising — Google Privacy Policy https://policies.google.com/privacy
-	•	Firebase Analytics: usage analytics — Google Privacy Policy https://policies.google.com/privacy
-	•	RevenueCat: purchases — RevenueCat Privacy Policy https://www.revenuecat.com/privacy
-5. Tracking
-The app uses the App Tracking Transparency (ATT) framework and asks for your permission before any ad tracking. Every feature of the app is available even if you decline. You can change this at any time in the iOS Settings app.
+• Google AdMob: advertising — https://policies.google.com/privacy
+• Firebase Analytics, Firebase Authentication, and Firebase Cloud Messaging: analytics, sign-in, and notifications — https://policies.google.com/privacy
+• Cloudflare Workers, D1, and R2: the Air Mail API, submission records, and submitted-image storage — https://www.cloudflare.com/privacypolicy/
+• Sign in with Apple and Apple Push Notification service: authentication and notification delivery — https://www.apple.com/legal/privacy/
+• RevenueCat: purchase status — https://www.revenuecat.com/privacy
+
+5. Ad tracking
+The app uses App Tracking Transparency (ATT) and asks for permission before ad tracking. You can use the app's features if you decline. You can change this permission in iOS Settings.
+
 6. Camera and photo library
-The camera is used only to take photos. The app writes to your photo library only when you choose to save a developed photo. It never reads photos from your photo library.
+The camera is used to take photos. The app writes to your photo library only when you choose to save a developed photo. It does not read photos from your photo library. You can send only one photo you choose from photos developed in this app to Air Mail.
+
 7. Storage and deletion
-Photos and film records are processed and stored only on your device and are never sent to the developer's servers. Deleting the app removes all local data.
-Photos you save to your photo library are then managed by your photo library.
+Personal-film photos and records are stored on your device. Deleting the app removes its local app data from the device. Photos saved to your photo library remain under your photo library's control.
+
+Published Air Mail can be viewed by other users in the app for 30 days. Submitted images and information on the backs of prints are retained after the exhibition ends and may be used in future features, such as placing past photos on a map. Retained photos are not publicly displayed.
+
+If you withdraw or delete a submission, its image is deleted and public display stops. Records needed to operate and moderate the service may remain. Deleting the app alone does not delete Air Mail submissions stored on the server. You can delete your account in the app. Account deletion removes submitted images, information on the backs of prints, and stored device tokens, and anonymizes the submitter identifier.
+
 8. Children's privacy
 The app does not knowingly collect personal information from children under 13.
+
 9. Contact
-Email: zooo14.dev@gmail.com
+For privacy questions, submission deletion, or rights concerns: after24.app@gmail.com
+
 10. Changes
-This policy may change without notice. Any changes will be posted on this page.
+Changes to this policy will be posted on this page.
